@@ -288,9 +288,9 @@
                 <i class="fas fa-heartbeat"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Nesciunt Mete</h3>
+                <h3>24/7 Emergency Care</h3>
               </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <p>Immediate Medical Attention Round the Clock. Our Emergency Department is open round the clock, Equipped to Handle Critical cases with speed and precision. Patients receive Immediate Attention from trained Doctors and Staff when every second counts.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -300,9 +300,9 @@
                 <i class="fas fa-pills"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Eosle Commodi</h3>
+                <h3>Advanced Diagnostics</h3>
               </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <p>We Offer state-of-the-Art Diagnostic Services, including modern lab tests and Imaging Technologies, to ensure accurate results for faster and more Effective Treatment.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -312,9 +312,9 @@
                 <i class="fas fa-hospital-user"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Ledo Markt</h3>
+                <h3>Specialized Departments</h3>
               </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <p>From Medicine and Surgery to Ortho, Nephro, and more, our Hospital Houses Multiple Specialties under one roof, providing complete Healthcare Solutions for every patient.</p>
             </div>
           </div><!-- End Service Item -->
 
@@ -324,9 +324,9 @@
                 <i class="fas fa-dna"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Asperiores Commodit</h3>
+                <h3>Experienced Doctors</h3>
               </a>
-              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+              <p>Our team of Highly Qualified Doctors brings years of Expertise and a Compassionate Approach, ensuring the best medical outcomes with personalized treatment plans.</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -337,9 +337,9 @@
                 <i class="fas fa-wheelchair"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Velit Doloremque</h3>
+                <h3>Modern Infrastructure</h3>
               </a>
-              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+              <p>With advanced Operation Theaters, Comfortable patient rooms, and Cutting-Edge Medical Facilities, we provide a safe and supportive environment for treatment and recovery.</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -350,9 +350,9 @@
                 <i class="fas fa-notes-medical"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Dolori Architecto</h3>
+                <h3>Compassionate Nursing Care</h3>
               </a>
-              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <p>Our Nursing Staff is Dedicated to patient comfort, Offering Personalized attention, round-the-clock support, and Compassionate Care throughout the Healing Journey.</p>
               <a href="#" class="stretched-link"></a>
             </div>
           </div><!-- End Service Item -->
@@ -1001,75 +1001,98 @@
   </main>
 
   <!-- WhatsApp Button -->
-<div>  
-  <a href="https://wa.me/9266208322" class="whatsapp-float" target="_blank">
-        <i class="fa fa-whatsapp whatsapp-icon"></i>
-      </a>
-      
-      <style>
-      .whatsapp-float {
-        position: fixed;
-        width: 60px;
-        height: 60px;
-        bottom: 80px;
-        right: 30px;
-        background-color: #25D366;
-        color: #FFF;
-        border-radius: 40px;
-        text-align: center;
-        font-size: 40px;
-        box-shadow: 2px 2px 3px #999;
-        z-index: 100;
-      }
-      
-      .whatsapp-icon {
-        margin-top: 8px;
-      }
-      </style>
-      
-      <!-- Add Font Awesome for the icon -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </div>
-    <!-- End WhatsApp Button -->
+  <div class="floating-buttons">
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/9266208322" class="whatsapp-button" target="_blank">
+      <i class="fa fa-whatsapp"></i>
+    </a>
   
     <!-- Call Button -->
+    <a href="tel:+919266208322" class="call-button" target="_blank">
+      <i class="fa fa-phone"></i>
+    </a>
+  </div>
+  
+  <style>
+    .floating-buttons {
+      position: fixed;
+      bottom: 65px;
+      right: 0;
+      display: flex;
+      flex-direction: column; /* stacked vertically */
+      gap: 10px;
+      z-index: 100;
+    }
+  
+    .floating-buttons a {
+      width: 60px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      color: #fff;
+      border-radius: 10px 0 0 10px; /* rounded only on left side */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden; /* keeps pulse aligned */
+    }
+  
+    /* WhatsApp */
+    .whatsapp-button {
+      background-color: #25D366;
+    }
+    .whatsapp-button:hover {
+      background-color: #1ebe5d;
+      transform: translateX(-5px) scale(1.05);
+    }
+  
+    /* Call */
+    .call-button {
+      background-color: #0088ff;
+    }
+    .call-button:hover {
+      background-color: #00bfff;
+      transform: translateX(-5px) scale(1.05);
+    }
+  
+    /* Pulse effect for both */
+    .floating-buttons a::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px 0 0 10px; /* match button shape */
+      background: rgba(255, 255, 255, 0.3);
+      transform: translate(-50%, -50%) scale(1);
+      animation: pulse 1.8s infinite ease-out;
+      z-index: -1;
+    }
+  
+    @keyframes pulse {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.7;
+      }
+      70% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0;
+      }
+      100% {
+        transform: translate(-50%, -50%) scale(1.5);
+        opacity: 0;
+      }
+    }
+  </style>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <!-- End Call Button -->
 
-    <div>
-      <a href="tel:+919266208322" class="call-button" target="_blank">
-        <i class="fa fa-phone"></i>
-      </a>
-    
-      <style>
-        .call-button {
-          position: fixed;
-          width: 45px;
-          height: 45px;
-          bottom: 20px;   /* distance from bottom */
-          right: 20px;    /* distance from right */
-          background-color: #0088ff;
-          color: white;
-          border-radius: 8px; /* square with soft edges */
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-size: 20px;
-          z-index: 100;
-          box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
-          transition: all 0.3s ease;
-        }
-    
-        .call-button:hover {
-          background-color: #00bfff;
-          transform: scale(1.1);
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-        }
-      </style>
-    
-      <!-- Correct Font Awesome link -->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </div>
-    
-<!-- End Call Button -->
   <footer id="footer" class="footer light-background">
 
     <div class="container footer-top">
@@ -1146,7 +1169,7 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
+        Designed by <a href="https://mpxvision.com" target="_blank">MPxVision</a>
       </div>
     </div>
 
