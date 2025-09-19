@@ -1710,6 +1710,33 @@ section,
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
+.more-btn {
+  display: inline-block;
+  background: #007bff;   /* Blue color */
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 28px;
+  border-radius: 25px;   /* Rounded edges */
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.more-btn:hover {
+  background: #0056b3;   /* Darker blue on hover */
+  color: #fff;
+  text-decoration: none;
+}
+
+.more-btn span {
+  vertical-align: middle;
+}
+
+.more-btn i {
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
